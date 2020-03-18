@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Set locale
 ENV LANG C.UTF-8 LC_ALL=C.UTF-8
+ENV SHELL /bin/bash
 
 ENTRYPOINT ["/bin/bash", "-c", "/root/docker-runner-startup"]
 
